@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.camera.ahmad.camerapic.CameraActivity">
+
+    <SurfaceView android:id="@+id/surface_camera"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+
+    android:layout_weight="1">
+
+    </SurfaceView>
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="2dip">
+
+    <ImageButton
+        android:id="@+id/TakePic"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/camera_icon"
+        android:paddingBottom = "30sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="1dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+
+        />
+
+    <Button
+        android:id="@+id/UsePic"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:paddingBottom = "30sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="150dp"
+        android:padding="1dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:clickable="false"
+        android:text="InvertPic"
+
+        />
+
+    </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
